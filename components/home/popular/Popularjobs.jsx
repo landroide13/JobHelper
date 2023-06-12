@@ -24,7 +24,7 @@ const Popularjobs = () => {
       <View style={styles.cardsContainer}>
         {
           isLoading ? (<ActivityIndicator size="large" color={COLORS.primary} />):
-          error ? (<text>Something went wrong</text>) :
+          error ? (<Text>Something went wrong</Text>) :
           (<FlatList 
             data={data}
             renderItem={({ item }) => (
